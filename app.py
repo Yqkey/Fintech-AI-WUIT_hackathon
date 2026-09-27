@@ -121,9 +121,6 @@ def load_data():
         train_transactions
     )
 
-    test_transactions = normalize_columns(
-        test_transactions
-    )
 
     # --------------------------------------------------------
     # Validate required columns
@@ -142,10 +139,6 @@ def load_data():
         - set(train_transactions.columns)
     )
 
-    test_missing = (
-        required_transaction_columns
-        - set(test_transactions.columns)
-    )
 
     if train_missing:
         raise ValueError(
@@ -155,19 +148,11 @@ def load_data():
             + str(train_transactions.columns.tolist())
         )
 
-    if test_missing:
-        raise ValueError(
-            "Missing columns in test_transactions: "
-            + str(sorted(test_missing))
-            + "\n\nActual columns: "
-            + str(test_transactions.columns.tolist())
-        )
 
     return (
         train_signals,
         test_signals,
         train_transactions,
-        test_transactions,
     )
 
 
@@ -179,7 +164,6 @@ def load_data():
     train_signals,
     test_signals,
     train_transactions,
-    test_transactions,
 ) = load_data()
 
 
