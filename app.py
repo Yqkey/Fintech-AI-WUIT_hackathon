@@ -188,10 +188,6 @@ st.sidebar.metric(
     f"{len(train_transactions):,}",
 )
 
-st.sidebar.metric(
-    "Test Transactions",
-    f"{len(test_transactions):,}",
-)
 
 
 # ============================================================
@@ -218,12 +214,6 @@ with col3:
     st.metric(
         "Train Transactions",
         f"{len(train_transactions):,}",
-    )
-
-with col4:
-    st.metric(
-        "Test Transactions",
-        f"{len(test_transactions):,}",
     )
 
 
