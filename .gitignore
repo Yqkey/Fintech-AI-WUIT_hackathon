@@ -1,0 +1,39 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Raw and processed datasets
+data/raw/
+data/processed/
+
+# Temporary files
+*.tmp
+*.log
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# OS / IDE files
+.idea/
+
+notebooks/catboost_info
