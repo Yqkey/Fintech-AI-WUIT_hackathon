@@ -70,9 +70,6 @@ def load_data():
         DATA_DIR / "train_transactions.parquet"
     )
 
-    test_transactions = pd.read_parquet(
-        DATA_DIR / "test_transactions.parquet"
-    )
 
     # --------------------------------------------------------
     # Normalize column names

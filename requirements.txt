@@ -3,8 +3,8 @@ numpy
 scikit-learn
 matplotlib
 pyarrow
-xgboost
-catboost
-jupyter
+#xgboost
+#catboost
+#jupyter
 streamlit
-notebook
+#notebook
