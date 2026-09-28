@@ -221,7 +221,7 @@ st.subheader("Training Signals")
 
 st.dataframe(
     train_signals.head(10),
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -229,7 +229,7 @@ st.subheader("Training Transactions")
 
 st.dataframe(
     train_transactions.head(10),
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -260,7 +260,7 @@ target_table = pd.DataFrame(
 
 st.dataframe(
     target_table,
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -345,7 +345,7 @@ direction_table = (
 
 st.dataframe(
     direction_table,
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -386,7 +386,7 @@ type_table = (
 
 st.dataframe(
     type_table,
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -447,7 +447,7 @@ activity_stats[
 
 st.dataframe(
     activity_stats,
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
 )
 
@@ -519,7 +519,7 @@ activity_summary = (
 
 st.dataframe(
     activity_summary.round(2),
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -575,7 +575,7 @@ amount_stats = (
 
 st.dataframe(
     amount_stats.to_frame("Value"),
-    use_container_width=True,
+    width="stretch",
 )
 
 
@@ -801,7 +801,7 @@ for group_name, features in feature_groups.items():
 
     st.dataframe(
         feature_df,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -858,7 +858,7 @@ validation_results = pd.DataFrame(
 
 st.dataframe(
     validation_results,
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
 )
 
@@ -898,7 +898,7 @@ walk_forward = pd.DataFrame(
 
 st.dataframe(
     walk_forward,
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
 )
 
